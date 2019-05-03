@@ -177,14 +177,15 @@ button {
   transform: translateY(4px);
 }
 .btn-shadow:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-shadow:active {
   transform: translateY(4px);
 }
 
 /* forms */
-input[type=text], select {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -194,7 +195,8 @@ input[type=text], select {
   box-sizing: border-box;
   border-bottom: 2px solid red;
 }
-input[type=password], select {
+input[type="password"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -204,9 +206,9 @@ input[type=password], select {
   box-sizing: border-box;
   border-bottom: 2px solid red;
 }
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -215,10 +217,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
-input[type="text"] {
-  border: none;
-  float: right;
-} */
