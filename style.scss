@@ -1,0 +1,225 @@
+@import "./variable.scss";
+
+// framework
+body {
+  font-family: "lucida sans", sans-serif;
+  font-size: 1em;
+  background-color: $white;
+  color: $dark;
+}
+
+// display
+.d {
+  &-flex {
+    display: flex;
+  }
+  &-block {
+    display: block;
+  }
+  &-inl {
+    display: inline;
+  }
+  &-inb {
+    display: inline-block;
+  }
+  &-li {
+    display: list-item;
+  }
+}
+
+//font colors
+.fnt {
+  &-white {
+    color: $white;
+  }
+  &-purple {
+    color: $purple;
+  }
+  &-red {
+    color: $red;
+  }
+  &-gray {
+    color: $gray;
+  }
+  &-dark {
+    color: $dark;
+  }
+  &-transp {
+    color: $trans;
+  }
+}
+
+// background colors
+.bg {
+  &-white {
+    background: $white;
+  }
+  &-purple {
+    background: $purple;
+  }
+  &-red {
+    background: $red;
+  }
+  &-gray {
+    background: $gray;
+  }
+  &-dark {
+    background: $dark;
+  }
+  &-transp {
+    background: $trans;
+  }
+}
+
+// margin
+.mg {
+  &-sm {
+    margin: $sm;
+  }
+  &-md {
+    margin: $md;
+  }
+  &-lg {
+    margin: $lg;
+  }
+}
+
+// padding
+.pd {
+  &-sm {
+    padding: $sm;
+  }
+  &-md {
+    padding: $md;
+  }
+  &-lg {
+    padding: $lg;
+  }
+}
+
+/* grid */
+.grid-container {
+  margin: 2rem;
+}
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+.grid-left {
+  grid-column: 1 / span 3;
+}
+.grid-right {
+  grid-column: 10 / span 3;
+}
+.grid-center {
+  grid-column: 4 / span 6;
+}
+.grid-all {
+  grid-column: 1 / 13;
+}
+
+/* align */
+.align {
+  &-left {
+    justify-self: start;
+  }
+  &-right {
+    justify-self: end;
+  }
+  &-horizontal {
+    justify-self: center;
+  }
+  &-top {
+    align-self: start;
+  }
+  &-bottom {
+    align-self: end;
+  }
+  &-vertical {
+    align-self: center;
+  }
+  &-full {
+    align-self: stretch;
+  }
+}
+
+/* text */
+.txt {
+  &-left {
+    text-align: left;
+  }
+  &right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-justify {
+    text-align: justify;
+  }
+}
+
+// button
+button {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin: 0.2em;
+  transition: transform, background-color, box-shadow;
+  transition-duration: 250ms;
+  position: relative;
+}
+.btn {
+  &-scale:hover {
+    transform: scale(1.1);
+  }
+  &-scale:active {
+    transform: translateY(4px);
+  }
+  &-pink:hover {
+    background-color: rgb(255, 140, 198);
+  }
+  &-pink:active {
+    transform: translateY(4px);
+  }
+  &-rotate:hover {
+    transform: rotateZ(360deg);
+  }
+  &-rotate:active {
+    transform: translateY(4px);
+  }
+  &-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+  &-shadow:active {
+    transform: translateY(4px);
+  }
+}
+
+// forms
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-bottom: 2px solid red;
+}
+input[type="submit"] {
+  background-color: $purple;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: $purple;
+}
