@@ -98,25 +98,27 @@ body {
 }
 
 /* grid */
-.grid-container {
-  margin: 2rem;
-}
-.grid-row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-}
-.grid-left {
-  grid-column: 1 / span 3;
-}
-.grid-right {
-  grid-column: 10 / span 3;
-}
-.grid-center {
-  grid-column: 4 / span 6;
-}
-.grid-all {
-  grid-column: 1 / 13;
+.grid {
+  &-container {
+    margin: 2rem;
+  }
+  &-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+  &-left {
+    grid-column: 1 / span 3;
+  }
+  &-right {
+    grid-column: 10 / span 3;
+  }
+  &-center {
+    grid-column: 4 / span 6;
+  }
+  &-all {
+    grid-column: 1 / 13;
+  }
 }
 
 /* align */
@@ -174,32 +176,22 @@ button {
   transition: transform, background-color, box-shadow;
   transition-duration: 250ms;
   position: relative;
+  &:active {
+    transform: translateY(4px) !important;
+  }
 }
 .btn {
   &-scale:hover {
     transform: scale(1.1);
   }
-  &-scale:active {
-    transform: translateY(4px);
-  }
   &-pink:hover {
     background-color: rgb(255, 140, 198);
-  }
-  &-pink:active {
-    transform: translateY(4px);
   }
   &-rotate:hover {
     transform: rotateZ(360deg);
   }
-  &-rotate:active {
-    transform: translateY(4px);
-  }
   &-shadow:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-      0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  }
-  &-shadow:active {
-    transform: translateY(4px);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
