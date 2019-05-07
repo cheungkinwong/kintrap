@@ -1,4 +1,15 @@
 @import "./variable.scss";
+@mixin forms {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border-bottom: 2px solid red;
+  background-color: white;
+}
 
 // framework
 body {
@@ -197,21 +208,14 @@ button {
 
 // forms
 input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  border-bottom: 2px solid red;
+  @include forms;
 }
 input[type="submit"] {
-  background-color: $purple;
-  color: white;
-  padding: 14px 20px;
   cursor: pointer;
+  &:active {
+    transform: translateY(4px) !important;
+  }
 }
-input[type="submit"]:hover {
-  background-color: $purple;
+select {
+  @include forms;
 }
