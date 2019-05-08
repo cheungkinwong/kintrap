@@ -1,4 +1,5 @@
 @import "./variable.scss";
+@import "./animation.scss";
 @mixin forms {
   width: 100%;
   padding: 16px 20px;
@@ -9,6 +10,13 @@
   box-sizing: border-box;
   border-bottom: 2px solid red;
   background-color: white;
+}
+@mixin animation($animation-name) {
+  animation-name: $animation-name;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  position: relative;
 }
 
 // framework
@@ -173,6 +181,22 @@ body {
   }
 }
 
+//animation
+.anime {
+  &-left {
+    @include animation(left);
+  }
+  &-right {
+    @include animation(right);
+  }
+  &-top {
+    @include animation(top);
+  }
+  &-bottom {
+    @include animation(bottom);
+  }
+}
+
 // button
 button {
   color: white;
@@ -189,20 +213,6 @@ button {
   position: relative;
   &:active {
     transform: translateY(4px) !important;
-  }
-}
-.btn {
-  &-scale:hover {
-    transform: scale(1.1);
-  }
-  &-pink:hover {
-    background-color: rgb(255, 140, 198);
-  }
-  &-rotate:hover {
-    transform: rotateZ(360deg);
-  }
-  &-shadow:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
