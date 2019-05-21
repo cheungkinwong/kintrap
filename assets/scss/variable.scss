@@ -1,3 +1,4 @@
+// colors
 $light: rgb(238, 234, 234);
 $gray: rgb(180, 179, 180);
 $accent: rgb(180, 6, 73);
@@ -5,13 +6,19 @@ $detail: rgb(132, 51, 139);
 $dark: rgb(45, 45, 45);
 $trans: transparent;
 
+// font
 $fmain: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 $fhead: Arial, Helvetica, sans-serif;
 
+// dimensions
 $root: 16px;
-$sm: 0.1rem;
+$xs: 0.1rem;
 $sm: 0.5rem;
 $md: 1rem;
 $lg: 2rem;
 $xl: 3rem;
+
+// custom grid
+$gridstart: 2;
+$gridend: 7;

@@ -70,6 +70,9 @@
 
 // margin
 .mg {
+  &-xs {
+    margin: $xs;
+  }
   &-sm {
     margin: $sm;
   }
@@ -79,29 +82,37 @@
   &-lg {
     margin: $lg;
   }
+  &-xl {
+    margin: $xl;
+  }
 }
 
 // padding
 .pd {
+  &-xs {
+    margin: $xs;
+  }
   &-sm {
-    padding: $sm;
+    margin: $sm;
   }
   &-md {
-    padding: $md;
+    margin: $md;
   }
   &-lg {
-    padding: $lg;
+    margin: $lg;
+  }
+  &-xl {
+    margin: $xl;
   }
 }
 
 /* grid */
 .grid {
   &-container {
-    margin: $md;
-  }
-  &-row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+  }
+  &-row {
     grid-template-rows: auto;
   }
   &-left {
@@ -117,7 +128,7 @@
     grid-column: 1 / 13;
   }
   &-custom {
-    @include defgrid(2, 7);
+    grid-column: $gridstart / $gridend;
   }
 }
 
