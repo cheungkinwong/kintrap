@@ -208,7 +208,7 @@ button {
   border-radius: 0.5em;
   padding: 0.5em;
   margin: 0.2em;
-  transition: transform, background-color, box-shadow;
+  transition: transform, background-color, box-shadow, all;
   transition-duration: 250ms;
   position: relative;
   &:active {

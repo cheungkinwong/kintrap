@@ -3,8 +3,8 @@
   &-scale:hover {
     transform: scale(1.1);
   }
-  &-pink:hover {
-    background-color: rgb(255, 140, 198);
+  &-darken:hover {
+    filter: brightness(80%);
   }
   &-rotate:hover {
     transform: rotateZ(360deg);

@@ -5,5 +5,5 @@
         "../scss/variable.scss"
     ],
     "names": [],
-    "file": "variable.css"
+    "file": "variable.min.css"
 }
