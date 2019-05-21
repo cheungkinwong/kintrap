@@ -1,12 +1,13 @@
-$white: rgb(238, 234, 234);
+$light: rgb(238, 234, 234);
 $gray: rgb(180, 179, 180);
-$red: rgb(180, 6, 73);
-$purple: rgb(132, 51, 139);
+$accent: rgb(180, 6, 73);
+$detail: rgb(132, 51, 139);
 $dark: rgb(45, 45, 45);
 $trans: transparent;
 
-$ffamily: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+$fmain: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$fhead: Arial, Helvetica, sans-serif;
 
 $root: 16px;
 $sm: 0.1rem;
