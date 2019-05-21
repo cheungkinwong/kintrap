@@ -1,6 +1,6 @@
 .btn-scale:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn-pink:hover {
@@ -9,12 +9,12 @@
 
 .btn-rotate:hover {
   -webkit-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 
 .btn-shadow:hover {
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 @-webkit-keyframes left {
@@ -198,10 +198,10 @@ body {
 .grid-row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr * 12;
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
 }
 
 .grid-left {
@@ -231,41 +231,41 @@ body {
 /* align */
 .align-left {
   -ms-grid-column-align: start;
-  justify-self: start;
+      justify-self: start;
 }
 
 .align-right {
   -ms-grid-column-align: end;
-  justify-self: end;
+      justify-self: end;
 }
 
 .align-horizontal {
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .align-top {
   -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .align-bottom {
   -ms-flex-item-align: end;
-  -ms-grid-row-align: end;
-  align-self: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .align-vertical {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .align-full {
   -ms-flex-item-align: stretch;
-  -ms-grid-row-align: stretch;
-  align-self: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 /* text */
@@ -287,49 +287,49 @@ body {
 
 .anime-left {
   -webkit-animation-name: left;
-  animation-name: left;
+          animation-name: left;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   position: relative;
 }
 
 .anime-right {
   -webkit-animation-name: right;
-  animation-name: right;
+          animation-name: right;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   position: relative;
 }
 
 .anime-top {
   -webkit-animation-name: top;
-  animation-name: top;
+          animation-name: top;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   position: relative;
 }
 
 .anime-bottom {
   -webkit-animation-name: bottom;
-  animation-name: bottom;
+          animation-name: bottom;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   position: relative;
 }
 
@@ -346,16 +346,15 @@ button {
   -webkit-transition: background-color, -webkit-transform, -webkit-box-shadow;
   transition: background-color, -webkit-transform, -webkit-box-shadow;
   transition: transform, background-color, box-shadow;
-  transition: transform, background-color, box-shadow, -webkit-transform,
-    -webkit-box-shadow;
+  transition: transform, background-color, box-shadow, -webkit-transform, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+          transition-duration: 250ms;
   position: relative;
 }
 
 button:active {
   -webkit-transform: translateY(4px) !important;
-  transform: translateY(4px) !important;
+          transform: translateY(4px) !important;
 }
 
 input {
@@ -366,7 +365,7 @@ input {
   margin: 8px 0;
   display: inline-block;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 2px solid red;
   background-color: white;
 }
@@ -377,7 +376,7 @@ input[type="submit"] {
 
 input[type="submit"]:active {
   -webkit-transform: translateY(4px) !important;
-  transform: translateY(4px) !important;
+          transform: translateY(4px) !important;
 }
 
 select {
@@ -388,7 +387,7 @@ select {
   margin: 8px 0;
   display: inline-block;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 2px solid red;
   background-color: white;
 }
