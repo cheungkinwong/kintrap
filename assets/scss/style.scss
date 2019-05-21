@@ -27,7 +27,7 @@
 //font colors
 .fnt {
   &-white {
-    color: $white;
+    color: $light;
   }
   &-detail {
     color: $detail;
@@ -49,13 +49,13 @@
 // background colors
 .bg {
   &-white {
-    background: $white;
+    background: $light;
   }
-  &-purple {
-    background: $purple;
+  &-detail {
+    background: $detail;
   }
-  &-red {
-    background: $red;
+  &-accent {
+    background: $accent;
   }
   &-gray {
     background: $gray;
@@ -191,7 +191,7 @@
 
 // button
 button {
-  color: white;
+  color: $light;
   font-size: 0.8em;
   text-align: center;
   text-decoration: none;
