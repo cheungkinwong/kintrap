@@ -6,8 +6,8 @@
   margin: 8px 0;
   display: inline-block;
   box-sizing: border-box;
-  border-bottom: 2px solid red;
-  background-color: white;
+  border-bottom: 2px solid $detail;
+  background-color: $light;
 }
 @mixin animation($animation-name) {
   animation-name: $animation-name;
