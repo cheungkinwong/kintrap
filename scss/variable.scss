@@ -5,6 +5,12 @@ $purple: rgb(132, 51, 139);
 $dark: rgb(45, 45, 45);
 $trans: transparent;
 
-$sm: 0.1em;
-$md: 0.5em;
-$lg: 1em;
+$ffamily: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+$root: 16px;
+$sm: 0.1rem;
+$sm: 0.5rem;
+$md: 1rem;
+$lg: 2rem;
+$xl: 3rem;

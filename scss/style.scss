@@ -1,14 +1,9 @@
 @import "./variable.scss";
+@import "./default.scss";
 @import "./animation.scss";
 @import "./mixin.scss";
 
 // framework
-body {
-  font-family: "lucida sans", sans-serif;
-  font-size: 1em;
-  background-color: $white;
-  color: $dark;
-}
 
 // display
 .d {
@@ -102,7 +97,7 @@ body {
 /* grid */
 .grid {
   &-container {
-    margin: 2rem;
+    margin: $md;
   }
   &-row {
     display: grid;
