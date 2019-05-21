@@ -1,23 +1,6 @@
 @import "./variable.scss";
 @import "./animation.scss";
-@mixin forms {
-  width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  margin: 8px 0;
-  display: inline-block;
-  box-sizing: border-box;
-  border-bottom: 2px solid red;
-  background-color: white;
-}
-@mixin animation($animation-name) {
-  animation-name: $animation-name;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-timing-function: ease-out;
-  position: relative;
-}
+@import "./mixin.scss";
 
 // framework
 body {
@@ -137,6 +120,9 @@ body {
   }
   &-all {
     grid-column: 1 / 13;
+  }
+  &-custom {
+    @include defgrid(2, 7);
   }
 }
 
