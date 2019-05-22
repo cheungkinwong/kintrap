@@ -2,7 +2,7 @@ html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
   background-color: #eeeaea;
-  color: #2d2d2d;
+  color: #131313;
   text-decoration: none;
 }
 
@@ -189,7 +189,7 @@ a {
 }
 
 .fnt-dark {
-  color: #2d2d2d;
+  color: #131313;
 }
 
 .fnt-transp {
@@ -217,7 +217,7 @@ a {
 }
 
 .bg-dark {
-  background: #2d2d2d;
+  background: #131313;
 }
 
 .bg-transp {
@@ -270,7 +270,7 @@ a {
 
 /* grid */
 .grid-container {
-  margin: 1rem;
+  margin: none;
 }
 
 .grid-row {

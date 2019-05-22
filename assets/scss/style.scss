@@ -115,7 +115,7 @@
 /* grid */
 .grid {
   &-container {
-    margin: $md;
+    margin: none;
   }
   &-row {
     display: grid;
