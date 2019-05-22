@@ -4,6 +4,7 @@ html {
   background-color: #eeeaea;
   color: #131313;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -138,6 +139,24 @@ a {
   }
   100% {
     top: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -430,6 +449,18 @@ a {
 .anime-bottom {
   -webkit-animation-name: bottom;
           animation-name: bottom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: relative;
+}
+
+.anime-fadein {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-delay: 1s;

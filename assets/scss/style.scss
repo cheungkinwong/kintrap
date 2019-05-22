@@ -208,6 +208,9 @@
   &-bottom {
     @include animation(bottom);
   }
+  &-fadein {
+    @include animation(fadein);
+  }
 }
 
 // button
