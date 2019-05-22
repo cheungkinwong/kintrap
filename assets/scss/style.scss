@@ -155,6 +155,20 @@
   &-full {
     align-self: stretch;
   }
+  &-content {
+    &-left {
+      justify-content: left;
+    }
+    &-right {
+      justify-content: right;
+    }
+    &-center {
+      justify-content: center;
+    }
+    &-spaced {
+      justify-content: space-between;
+    }
+  }
 }
 
 /* text */
@@ -200,12 +214,23 @@ button {
   border-radius: 0.5em;
   padding: 0.5em;
   margin: 0.2em;
-  transition: transform, background-color, box-shadow, all;
+  transition: all;
   transition-duration: 250ms;
   position: relative;
   &:active {
     transform: translateY(4px) !important;
   }
+}
+// position
+.ps {
+  position: sticky;
+  top: 0;
+}
+.pa {
+  position: absolute;
+}
+.pr {
+  position: relative;
 }
 
 // forms
