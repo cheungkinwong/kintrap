@@ -13,18 +13,18 @@
     <nav class="bg-gray fnt-light ps pd-sm ">
       <ul class="d-flex mg-xs">
         <li>
-          <button class="btn-darken bg-gray fnt-light" class="#home">
-            home
+          <button class="hvr-darken bg-gray fnt-light">
+            <a href="#home">home</a>
           </button>
         </li>
         <li>
-          <button class="btn-darken bg-gray fnt-light" class="#content">
-            content
+          <button class="hvr-darken bg-gray fnt-light">
+            <a href="#content">content</a>
           </button>
         </li>
         <li>
-          <button class="btn-darken bg-gray fnt-light" class="#contact">
-            Contact
+          <button class="hvr-darken bg-gray fnt-light">
+            <a href="#contact">Contact</a>
           </button>
         </li>
       </ul>
@@ -32,24 +32,25 @@
 
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-all bg-accent txt-center  anime-top">
+        <div class="grid-all bg-accent txt-center  anime-top" id="home">
           <h1 class="fnt-light">MY FRAMEWORK</h1>
         </div>
       </div>
       <!-- parallax   -->
       <div class="parallax"></div>
+      <!-- button -->
       <div class="grid-row">
-        <div class="grid-left anime-left">
-          <button class="btn-rotate bg-detail fnt-accent d-block">
+        <div class="grid-left align-horizontal align-vertical anime-left">
+          <button class="hvr-rotate bg-detail fnt-accent d-block">
             button 1
           </button>
-          <button class="btn-scale bg-gray fnt-dark d-block">
+          <button class="hvr-scale bg-gray fnt-dark d-block">
             button 2
           </button>
-          <button class="btn-darken bg-accent fnt-detail d-block">
+          <button class="hvr-darken bg-accent fnt-detail d-block">
             button 3
           </button>
-          <button class="btn-shadow bg-dark fnt-light d-block">
+          <button class="hvr-shadow bg-dark fnt-light d-block">
             button 4
           </button>
         </div>
@@ -94,15 +95,19 @@
               type="text"
               name="username"
               placeholder="Enter Username"
-              class="bg-light"
+              class="bg-light hvr-darken fnt-gray"
             />
             <input
               type="password"
               name="password"
               placeholder="Enter password"
-              class="bg-light"
+              class="bg-light hvr-darken fnt-gray"
             />
-            <select id="country" name="country">
+            <select
+              id="country"
+              name="country"
+              class="bg-light hvr-darken fnt-gray"
+            >
               <option value="au">Australia</option>
               <option value="ca">Canada</option>
               <option value="usa">USA</option>
@@ -110,7 +115,7 @@
             <input
               type="submit"
               name="submit"
-              class="btn-darken bg-detail fnt-light"
+              class="hvr-darken bg-detail fnt-light"
               junior
             />
           </div>

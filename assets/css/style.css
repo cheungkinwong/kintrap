@@ -42,22 +42,29 @@ nav {
   z-index: 10;
 }
 
-.btn-scale:hover {
+link,
+ul,
+li,
+a {
+  text-decoration: none;
+}
+
+.hvr-scale:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.btn-darken:hover {
+.hvr-darken:hover {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
 }
 
-.btn-rotate:hover {
+.hvr-rotate:hover {
   -webkit-transform: rotateZ(360deg);
           transform: rotateZ(360deg);
 }
 
-.btn-shadow:hover {
+.hvr-shadow:hover {
   -webkit-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.19);
 }

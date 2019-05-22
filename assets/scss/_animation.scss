@@ -1,5 +1,5 @@
 //transition
-.btn {
+.hvr {
   &-scale:hover {
     transform: scale(1.1);
   }
@@ -48,6 +48,7 @@
   }
 }
 
+// parallax
 .parallax {
   background-image: url("../img/parallax.jpg");
   height: 25vh;
