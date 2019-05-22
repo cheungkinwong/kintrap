@@ -90,29 +90,30 @@
 // padding
 .pd {
   &-xs {
-    margin: $xs;
+    padding: $xs;
   }
   &-sm {
-    margin: $sm;
+    padding: $sm;
   }
   &-md {
-    margin: $md;
+    padding: $md;
   }
   &-lg {
-    margin: $lg;
+    padding: $lg;
   }
   &-xl {
-    margin: $xl;
+    padding: $xl;
   }
 }
 
 /* grid */
 .grid {
   &-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    margin: $md;
   }
   &-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
   }
   &-left {

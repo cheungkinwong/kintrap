@@ -216,34 +216,35 @@ h2 {
 }
 
 .pd-xs {
-  margin: 0.1rem;
+  padding: 0.1rem;
 }
 
 .pd-sm {
-  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .pd-md {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .pd-lg {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .pd-xl {
-  margin: 3rem;
+  padding: 3rem;
 }
 
 /* grid */
 .grid-container {
+  margin: 1rem;
+}
+
+.grid-row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-}
-
-.grid-row {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
