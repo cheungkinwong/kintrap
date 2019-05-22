@@ -22,7 +22,7 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  color: #b40649;
+  color: #b40146;
 }
 
 h2 {
@@ -31,6 +31,15 @@ h2 {
 
 h2 {
   font-size: 1rem;
+}
+
+p {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+nav {
+  z-index: 10;
 }
 
 .btn-scale:hover {
@@ -152,11 +161,11 @@ h2 {
 }
 
 .fnt-detail {
-  color: #84338b;
+  color: #a86ead;
 }
 
 .fnt-accent {
-  color: #b40649;
+  color: #b40146;
 }
 
 .fnt-gray {
@@ -171,16 +180,20 @@ h2 {
   color: transparent;
 }
 
+.fnt-gradient {
+  color: linear-gradient(#b40146, #eeeaea);
+}
+
 .bg-white {
   background: #eeeaea;
 }
 
 .bg-detail {
-  background: #84338b;
+  background: #a86ead;
 }
 
 .bg-accent {
-  background: #b40649;
+  background: #b40146;
 }
 
 .bg-gray {
@@ -193,6 +206,10 @@ h2 {
 
 .bg-transp {
   background: transparent;
+}
+
+.bg-gradient {
+  background: linear-Gradient(#b40146, #eeeaea);
 }
 
 .mg-xs {
@@ -451,7 +468,7 @@ input {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 2px solid #84338b;
+  border-bottom: 2px solid #a86ead;
   background-color: #eeeaea;
 }
 
@@ -473,7 +490,7 @@ select {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 2px solid #84338b;
+  border-bottom: 2px solid #a86ead;
   background-color: #eeeaea;
 }
 /*# sourceMappingURL=style.css.map */

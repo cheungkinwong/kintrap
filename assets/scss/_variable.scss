@@ -1,8 +1,8 @@
 // colors
 $light: rgb(238, 234, 234);
 $gray: rgb(180, 179, 180);
-$accent: rgb(180, 6, 73);
-$detail: rgb(132, 51, 139);
+$accent: rgb(180, 1, 70);
+$detail: rgb(168, 110, 173);
 $dark: rgb(45, 45, 45);
 $trans: transparent;
 
@@ -22,3 +22,7 @@ $xl: 3rem;
 // custom grid
 $gridstart: 3;
 $gridend: 7;
+
+// colorgradient
+$colorstart: $accent;
+$colorend: $light;

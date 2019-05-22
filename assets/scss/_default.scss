@@ -27,3 +27,9 @@ h2 {
 h2 {
   font-size: $md;
 }
+p {
+  margin-block-end: 1rem;
+}
+nav {
+  z-index: 10;
+}
